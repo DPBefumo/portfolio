@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 django-extensions = "*"
 django = "*"
+django-environ = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.8"
