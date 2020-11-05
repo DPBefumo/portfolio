@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 <div>    
@@ -10,10 +11,10 @@
         </div>
         <div>
             <div class="project"> 
-                <img src="resources/happy-valley-shelter.png" class="project-img">
+                <img src="{% static 'resources/images/happy-valley-shelter.png' %}" class="project-img">
                 <p class="pj-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <div class="project">
-                <img src="resources/lazy-river-nursery.png" class="project-img">
+                <img src="{% static 'resources/images/lazy-river-nursery.png' %}" class="project-img">
                 <p class="pj-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
         </div>

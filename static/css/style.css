@@ -14,7 +14,7 @@ body{
     color: azure;
     margin: 0;
     font-family: 'Barlow Condensed', sans-serif;
-    background-image: linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url('background/office-background.png');
+    background-image: linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url("/static/resources/background/office-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
