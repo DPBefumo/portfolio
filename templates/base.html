@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css'ß %}">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
-    <title>Danny's Project</title>
+    <title>Daniel Befumo - </title>
 </head>
 <body>
     <header class="hero-header"> 
@@ -27,10 +27,8 @@
         </nav>
     </header>
     <div>
-        <h2 class="resume-title" id="resume">Résumé</h2>
-    </div>
-    <div>     
-        <img src="resources/danny-befumo-resume.png" class="resume-img">
+    {% block content %}
+    {% endblock %}
     </div>    
     <footer id="contact">
         <div class="info-footer"> 
