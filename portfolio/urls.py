@@ -7,8 +7,9 @@ from core import views as core_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', core_views.index, name='index'),
-    path('projects/', core_views.project_detail, name='project_detail'),
     path('resume/', core_views.resume_detail, name='resume_detail'),
+    path('projects/', core_views.project_detail, name='project_detail'),
+    path('projects/dog_adoption', core_views.dog_adoption, name='dog_adoption'),
 ]
 
 if settings.DEBUG:

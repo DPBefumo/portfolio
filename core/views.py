@@ -11,3 +11,6 @@ def project_detail(request):
 
 def resume_detail(request):
     return render(request, 'core/resume.html')
+
+def dog_adoption(request):
+    return render(request, 'core/dog_adoption.html')

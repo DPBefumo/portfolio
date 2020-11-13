@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
-    <title>Daniel Befumo - </title>
+    <title>GIVE ME A FUCKING JOB!!!!!!</title>
 </head>
 <body>
-    <header class="hero-header"> 
-        <img src="{% static '/resources/images/dpb-logo-teal.png' %}" class="image-header">
-        <div class="name-descrip">
-            <div>  
-                <h1 class="name-header">Danny Befumo</h1>
-            </div>
-            <div> 
-                <h3 class="descrip-header">Developer to Be</h3>
-            </div>
-        </div> 
-        <nav class="nav-bar">
-            <a href="{% url 'index' %}" class="button">About Me</a>
-            <a href="{% url 'project_detail' %}" class="button">Projects</a>
-            <a href="{% url 'resume_detail' %}" class="button">Résumé</a>
-            <a href="#contact" class="button">Contact Me</a>
-        </nav>
-    </header>
-    <div>
-    {% block content %}
-    {% endblock %}
-    </div>    
+    <div class="background-body">
+        <header class="hero-header"> 
+            <img src="{% static '/resources/images/dpb-logo-teal.png' %}" class="image-header">
+            <div class="name-descrip">
+                <div>  
+                    <h1 class="name-header">Danny Befumo</h1>
+                </div>
+                <div> 
+                    <h3 class="descrip-header">Developer to Be</h3>
+                </div>
+            </div> 
+            <nav class="nav-bar">
+                <a href="{% url 'index' %}" class="button">About Me</a>
+                <a href="{% url 'project_detail' %}" class="button">Projects</a>
+                <a href="{% url 'resume_detail' %}" class="button">Résumé</a>
+                <a href="#contact" class="button">Contact Me</a>
+            </nav>
+        </header>
+        <div>
+        {% block content %}
+        {% endblock %}
+        </div>    
+    </div>
     <footer id="contact">
         <div class="info-footer"> 
             <a href="mailto:DPBefumo@gmail.com"> <img src="{% static '/resources/images/mail-img-blue.png' %}" target="_blank" class="foot-links"> </a> 

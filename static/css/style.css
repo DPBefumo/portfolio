@@ -9,15 +9,21 @@ linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url('backgr
     }
 } */
 
-body{
+.background-body{
     background-color: #86b3d1;
     color: azure;
     margin: 0;
     font-family: 'Barlow Condensed', sans-serif;
     background-image: linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url("/static/resources/background/office-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 1024px;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .hero-header {
@@ -104,13 +110,8 @@ body{
 }
 
 .main-photo {
-    width: 30%;
+    width: 20%;
     border-radius: 70%;
-}
-
-.project-img {
-    width: 80%;
-    align-content: center;
 }
 
 .resume-img {
@@ -119,6 +120,11 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.project-img {
+    width: 50%;
+    align-content: center;
 }
 
 .project {
@@ -134,8 +140,6 @@ body{
     padding: 1em;
 }
 
-
-
 .info-footer {
     display: flex;
     justify-content: center;
@@ -143,6 +147,8 @@ body{
     border-top: 7px #edb5bf outset;
     padding-top: 1em;
     background-color: #5F6366;
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
