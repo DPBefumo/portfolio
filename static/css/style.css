@@ -9,6 +9,11 @@ linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url('backgr
     }
 } */
 
+/* body{
+    margin-right: -.5em;
+    margin-left: -5em;
+} */
+
 .background-body{
     background-color: #86b3d1;
     color: azure;
@@ -17,13 +22,11 @@ linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url('backgr
     background-image: linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url("/static/resources/background/office-background.png");
     background-position: center;
     background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-attachment: fixed;
     min-width: 1024px;
     min-height: 100%;
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .hero-header {
@@ -34,6 +37,8 @@ linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url('backgr
     padding-bottom: 1em;
     padding-top: 1em;
     background-color: #5F6366;   
+    margin-top: -1em;
+    width: 100%;
 }
 
 .image-header {
@@ -146,10 +151,12 @@ linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url('backgr
     align-content: center;
     border-top: 7px #edb5bf outset;
     padding-top: 1em;
+    padding-bottom: 1em;
     background-color: #5F6366;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    /* position: absolute;
+    bottom: 0; */
+    margin-bottom: -1em;
 }
 
 .foot-links {

@@ -10,35 +10,31 @@
     <title>GIVE ME A FUCKING JOB!!!!!!</title>
 </head>
 <body>
+    <header class="hero-header"> 
+        <img src="{% static '/resources/images/dpb-logo-teal.png' %}" class="image-header">
+        <div class="name-descrip">
+            <div>  
+                <h1 class="name-header">Danny Befumo</h1>
+            </div>
+            <div> 
+                <h3 class="descrip-header">Developer to Be</h3>
+            </div>
+        </div> 
+        <nav class="nav-bar">
+            <a href="{% url 'index' %}" class="button">About Me</a>
+            <a href="{% url 'project_detail' %}" class="button">Projects</a>
+            <a href="{% url 'resume_detail' %}" class="button">Résumé</a>
+            <a href="#contact" class="button">Contact Me</a>
+        </nav>
+    </header>
     <div class="background-body">
-        <header class="hero-header"> 
-            <img src="{% static '/resources/images/dpb-logo-teal.png' %}" class="image-header">
-            <div class="name-descrip">
-                <div>  
-                    <h1 class="name-header">Danny Befumo</h1>
-                </div>
-                <div> 
-                    <h3 class="descrip-header">Developer to Be</h3>
-                </div>
-            </div> 
-            <nav class="nav-bar">
-                <a href="{% url 'index' %}" class="button">About Me</a>
-                <a href="{% url 'project_detail' %}" class="button">Projects</a>
-                <a href="{% url 'resume_detail' %}" class="button">Résumé</a>
-                <a href="#contact" class="button">Contact Me</a>
-            </nav>
-        </header>
-        <div>
         {% block content %}
         {% endblock %}
-        </div>    
     </div>
-    <footer id="contact">
-        <div class="info-footer"> 
-            <a href="mailto:DPBefumo@gmail.com"> <img src="{% static '/resources/images/mail-img-blue.png' %}" target="_blank" class="foot-links"> </a> 
-            <a href="https://www.linkedin.com/in/daniel-befumo-2b5b5340/" target="_blank"> <img src="{% static 'resources/images/linkedin-img-blue.png' %}" class="foot-links"> </a>
-            <a href="https://github.com/DPBefumo" target="_blank"> <img src="{% static 'resources/images/github-img-blue.png' %}" class="foot-links"> </a>
-        </div>
+    <footer class="info-footer" id="contact">
+        <a href="mailto:DPBefumo@gmail.com"> <img src="{% static '/resources/images/mail-img-blue.png' %}" target="_blank" class="foot-links"> </a> 
+        <a href="https://www.linkedin.com/in/daniel-befumo-2b5b5340/" target="_blank"> <img src="{% static 'resources/images/linkedin-img-blue.png' %}" class="foot-links"> </a>
+        <a href="https://github.com/DPBefumo" target="_blank"> <img src="{% static 'resources/images/github-img-blue.png' %}" class="foot-links"> </a>
     </footer>
 </body>
 </html>
