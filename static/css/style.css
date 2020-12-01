@@ -9,10 +9,9 @@ linear-gradient(rgba(134, 179, 209, 0.60), rgba(77, 109, 154, 0.6)), url('backgr
     }
 } */
 
-/* body{
-    margin-right: -.5em;
-    margin-left: -5em;
-} */
+body{
+    margin: 0em;
+}
 
 .background-body{
     background-color: #86b3d1;
